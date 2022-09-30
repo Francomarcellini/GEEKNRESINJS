@@ -109,6 +109,11 @@ header {
     height: 12vw;
     width: auto;
     padding-left: 2%; }
+.compra{
+  display: flex;
+  flex-direction: row;
+  gap:2%
+}
 
 .header__nav {
   height: 35%;
