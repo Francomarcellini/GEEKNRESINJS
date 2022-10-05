@@ -112,7 +112,9 @@ header {
 .compra{
   display: flex;
   flex-direction: row;
-  gap:2%
+  gap:2%;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 .header__nav {
