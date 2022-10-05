@@ -3,64 +3,34 @@ let buyGrid = document.getElementById("itemsCompra");
 let carritoDeCompras = document.getElementById("carritoDeCompras");
 let productos = [
     {
-        id: 1,
-        nombre: "Posa vaso Jigglypuf",
-        precio : precioPosavaso,
-        imagen :"/resources/A1.jpg",
+        id: 1,nombre: "Posa vaso Jigglypuf",precio : precioPosavaso,imagen :"/resources/A1.jpg",
     },
     {
-        id: 2,
-        nombre: "Posa vaso Scyther",
-        precio : precioPosavaso,
-        imagen :"/resources/B1.jpg",
+        id: 2,nombre: "Posa vaso Scyther",precio : precioPosavaso,imagen :"/resources/B1.jpg",
     },
     {
-        id: 3,
-        nombre: "Posa vaso Gastly",
-        precio : precioPosavaso,
-        imagen :"/resources/C1.jpg",
+        id: 3,nombre: "Posa vaso Gastly",precio : precioPosavaso,imagen :"/resources/C1.jpg",
     },
     {
-        id: 4,
-        nombre: "Posa vaso Alakazam",
-        precio : precioPosavaso,
-        imagen :"/resources/D1.jpg",
+        id: 4,nombre: "Posa vaso Alakazam",precio : precioPosavaso,imagen :"/resources/D1.jpg",
     },
     {
-        id: 5,
-        nombre: "Posa vaso Vulpix",
-        precio : precioPosavaso,
-        imagen :"/resources/f1.jpg",
+        id: 5,nombre: "Posa vaso Vulpix",precio : precioPosavaso,imagen :"/resources/f1.jpg",
     },
     {
-        id: 6,
-        nombre: "Posa vaso Meowth",
-        precio : precioPosavaso,
-        imagen :"/resources/G1.jpg",
+        id: 6,nombre: "Posa vaso Meowth",precio : precioPosavaso,imagen :"/resources/G1.jpg",
     },
     {
-        id: 7,
-        nombre: "Posa vaso Growlithe",
-        precio : precioPosavaso,
-        imagen :"/resources/I1.jpg",
+        id: 7,nombre: "Posa vaso Growlithe",precio : precioPosavaso,imagen :"/resources/I1.jpg",
     },
     {
-        id: 8,
-        nombre: "Posa vaso Houndour",
-        precio : precioPosavaso,
-        imagen :"/resources/K1.jpg",
+        id: 8,nombre: "Posa vaso Houndour",precio : precioPosavaso,imagen :"/resources/K1.jpg",
     },
     {
-        id: 9,
-        nombre: "Posa vaso Jigglypuff",
-        precio : precioPosavaso,
-        imagen :"/resources/A1.jpg",
+        id: 9,nombre: "Posa vaso Jigglypuff",precio : precioPosavaso,imagen :"/resources/A1.jpg",
     },
     {
-        id: 10,
-        nombre: "Posa vaso Electabuzz",
-        precio : precioPosavaso,
-        imagen :"/resources/L1.jpg",
+        id: 10,nombre: "Posa vaso Electabuzz",precio : precioPosavaso,imagen :"/resources/L1.jpg",
     },
 ];
 let carrito = []
