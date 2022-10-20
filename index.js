@@ -62,5 +62,3 @@ carritoDeCompras.addEventListener("click", () => console.log(carrito));
 carritoDeCompras.addEventListener("click", () => localStorage.setItem("carrito",JSON.stringify(carrito)));
 
 
-
-
