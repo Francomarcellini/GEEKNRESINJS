@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Geek N Resin</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+    
+    <header class="header2">
+        <a href="index.html"><img src="img/logo.jpg" class="logo" alt=""></a>
+        <a href="index.html" class="seguir-comprando-btn"> <i class="fas fa-arrow-circle-left"></i> SEGUIR COMPRANDO</a>
+    </header>
+
+    
+
+<!-- Formulario -->
+<div class="formulario-contenedor">
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01"  required>
+              <div class="invalid-feedback">
+                Ingrese un nombre válido
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02"  required>
+              <div class="invalid-feedback">
+                Ingrese un apellido válido
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustomUsername" class="form-label">Correo Electrónico</label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Ingrese un correo electrónico válido
+                </div>
+              </div>
+            </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Dirección</label>
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Ingrese una dirección válida
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Ingrese una ciudad válida
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Provincia</option>
+                <option>Buenos Aires</option>
+                <option>Santa Fé</option>
+                <option>Córdoba</option>
+                <option>Entre Ríos</option>
+              </select>
+              <div class="invalid-feedback">
+                Seleccione una provincia válida
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom05" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Ingrese un código postal válido
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <button class="btn-formulario" type="submit">Enviar datos</button>
+            </div>
+          </form>
+    </div>
+</div>
+
+<footer>
+  <ul class="lista-de-redes">
+      <li><div class="instagram"></div><a href="https://www.instagram.com/geeknresin/">Instagram</a></li>
+      <li><div class="facebook"></div><a href="https://www.facebook.com/">Facebook</a></li>
+      <li ><div class="twitter"></div><a href="https://twitter.com/home?lang=es">Twitter</a></li>
+  </ul>
+</div>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7355c63a6f.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script src="js/formulario.js"></script>
+
+
+
+</body>
+</html>
