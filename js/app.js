@@ -11,43 +11,35 @@ const listaCarrito = $('#lista-carrito');
 const vaciarCarritoBtn = $('#vaciar-carrito');
 
 
+const fetchProductos = async () => {
+    const buscarProduc = await fetch("/json/productos.json");
 
-//Variables - Objetos 
-const ProductoUno = {id:1, nombre: "JIGGLYPUFF PINK", precio: 1800, imagen:'01.jpg'};
-const ProductoDos = {id:2, nombre: "SCYTHER GREEN ", precio: 2000, imagen:'02.jpg'};
-const ProductoTres = {id:3, nombre: "GASTLY PURPLE", precio: 2200, imagen:'03.jpg'};
-const ProductoCuatro = {id:4, nombre: "DARK ALAKAZAM PURPLE", precio: 2500, imagen:'04.jpg'};
-const ProductoCinco = {id:5, nombre: "ALOLAN VULPIX GREEN/BLUE", precio: 1700, imagen:'05.jpg'};
-const ProductoSeis = {id:6, nombre: "MEOWTH WHITE", precio: 2000, imagen:'06.jpg'};
-const ProductoSiete = {id:7, nombre: "GROWLITHE RED", precio: 1900, imagen:'07.jpg'};
-const ProductoOcho = {id:8, nombre: "HOUNDOUR BLACK ", precio: 2200, imagen:'08.jpg'};
-const ProductoNueve = {id:9, nombre: "ELECTABUZZ YELLOW", precio: 2000, imagen:'09.jpg'};
-const ProductoDiez = {id:10, nombre: "GALARIAN OBSTAGOON BLACK ", precio: 2500, imagen:'10.jpg'};
-const ProductoOnce = {id:11, nombre: "PSYDUCK BLUE", precio: 1800, imagen:'11.jpg'};
-const ProductoDoce = {id:12, nombre: "EEVEE 3D TRANSPARENT", precio: 2700, imagen:'12.jpg'};
+    const productosJson = await buscarProduc.json();
 
+    datosProductos(productosJson);
+}
 
-//Variables - Arrays
-const BaseDeDatosProductos = [ProductoUno, ProductoDos, ProductoTres, ProductoCuatro, ProductoCinco, ProductoSeis, ProductoSiete, ProductoOcho, ProductoNueve, ProductoDiez, ProductoOnce, ProductoDoce];
+const datosProductos = (productos) => {
+    const lista = document.getElementById("productos");
+    productos.forEach(producto => {
+        const tar = document.createElement("div");
+        tar.classList.add("col-xs-12","col-md-6", "col-xl-4")
+        tar.setAttribute("id","item-producto")
+        const productoHtml =` 
+                <div class="item" id="item">
+                    <h2 class="item-title" id="nombre">${producto.nombre}</h2> 
+                    <p class="pesos">$</p><p class="precio" id="precio">${producto.precio}</p>
+                    <img id="img "src="./img/productos/${producto.imagen}" alt="" class="item-img">
+                    <button id="comprar-btn" class="comprar-btn" data-id="${producto.id}">AGREGAR</button>
+                </div> 
+            `;
+        tar.innerHTML = productoHtml;
 
+        lista.appendChild(tar);
+    })
+}
 
-//Ciclo for - Template html 
-for (let i = 0; i < BaseDeDatosProductos.length; i++) {
-    template += `
-    <div class="col-xs-12 col-md-6 col-xl-4 id="item-producto">
-        <div class="item" id="item">
-            <h2 class="item-title" id="nombre">${BaseDeDatosProductos[i].nombre}</h2> 
-            <p class="pesos">$</p><p class="precio" id="precio">${BaseDeDatosProductos[i].precio}</p>
-            <img id="img "src="./img/productos/${BaseDeDatosProductos[i].imagen}" alt="" class="item-img">
-            <button id="comprar-btn" class="comprar-btn" data-id="${BaseDeDatosProductos[i].id}">AGREGAR</button>
-        </div> 
-    </div>`;
-} 
-
-//Imprimir cards en el html
-$('#productos').html(template);
-
-
+fetchProductos();
 
 /** -- EVENTOS -- **/
 cargarEventListeners(); 

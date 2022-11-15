@@ -1,0 +1,75 @@
+
+[
+    {
+        "id" : "1",
+        "nombre" : "JIGGLYPUFF",
+        "precio" : "1800",
+        "imagen" : "01.jpg"
+    },
+    {
+        "id" : "2",
+        "nombre" : "SCYTHER GREEN",
+        "precio" : "2000",
+        "imagen" : "02.jpg"
+    },
+    {
+        "id" : "3",
+        "nombre" : "GASTLY PURPLE",
+        "precio" : "2200",
+        "imagen" : "03.jpg"
+    },
+    {
+        "id" : "4",
+        "nombre" : "DARK ALAKAZAM PURPLE",
+        "precio" : "2500",
+        "imagen" : "04.jpg"
+    },
+    {
+        "id" : "5",
+        "nombre" : "ALOLAN VULPIX GREEN/BLUE",
+        "precio" : "1700",
+        "imagen" : "05.jpg"
+    },
+    {
+        "id" : "6",
+        "nombre" : "MEOWTH WHITE",
+        "precio" : "2000",
+        "imagen" : "06.jpg"
+    },
+    {
+        "id" : "7",
+        "nombre" : "GROWLITHE RED",
+        "precio" : "1900",
+        "imagen" : "07.jpg"
+    },
+    {
+        "id" : "8",
+        "nombre" : "HOUNDOUR BLACK",
+        "precio" : "2200",
+        "imagen" : "08.jpg"
+    },
+    {
+        "id" : "9",
+        "nombre" : "ELECTABUZZ YELLOW",
+        "precio" : "2000",
+        "imagen" : "09.jpg"
+    },
+    {
+        "id" : "10",
+        "nombre" : "GALARIAN OBSTAGOON BLACK",
+        "precio" : "2500",
+        "imagen" : "10.jpg"
+    },
+    {
+        "id" : "11",
+        "nombre" : "PSYDUCK BLUE",
+        "precio" : "1800",
+        "imagen" : "11.jpg"
+    },
+    {
+        "id" : "12",
+        "nombre" : "EEVEE 3D TRANSPARENT",
+        "precio" : "2700",
+        "imagen" : "12.jpg"
+    }
+]
